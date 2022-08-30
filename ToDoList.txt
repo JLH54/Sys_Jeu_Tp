@@ -1,0 +1,6 @@
+To do:
+player :
+	player animation
+	player movement
+Main menu :
+	quand le joueur superpose le niveau; voir le nom,description,l'etoile, un bouton
