@@ -3,4 +3,4 @@ player :
 	player animation
 	player movement
 Main menu :
-	quand le joueur superpose le niveau; voir le nom,description,l'etoile, un bouton
+	La superposition marche(ish) a regarder si le nom du script rentre en  conflit

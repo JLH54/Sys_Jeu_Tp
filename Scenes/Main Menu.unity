@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 223537970}
   - component: {fileID: 223537972}
   - component: {fileID: 223537971}
+  - component: {fileID: 223537973}
   m_Layer: 5
   m_Name: Level3
   m_TagString: Untagged
@@ -199,6 +200,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223537969}
   m_CullTransparentMesh: 1
+--- !u!114 &223537973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223537969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446a2464a93443c4992c7ea13b4c448a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelIcon: {fileID: 223537969}
+  WidthIcon: 175
+  HeightIcon: 125
+  LvlMessage: 'Level 3 :'
+  ObjectLvlText: {fileID: 367390451}
+  LvlText: {fileID: 1628962447}
+  ObjectTalkingTextBox: {fileID: 973814475}
+  TalkingTextBox: {fileID: 2141174678}
+  TalkingBox: yes
+  StartButton: {fileID: 1886224489}
+  Player: {fileID: 1852267410}
+  PlayerWidth: 125
+  PlayerHeight: 125
 --- !u!1 &289883885
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,7 +730,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 908121500}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1346221376}
+        m_TargetAssemblyTypeName: Ui, Assembly-CSharp
+        m_MethodName: OnStartClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &908121500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,6 +885,7 @@ GameObject:
   - component: {fileID: 1346221374}
   - component: {fileID: 1346221373}
   - component: {fileID: 1346221372}
+  - component: {fileID: 1346221376}
   m_Layer: 5
   m_Name: UserInterfaceMenu
   m_TagString: Untagged
@@ -941,6 +980,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1346221376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346221371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23bc3a524183dab4f8a228f15e4b420d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1397269129
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,6 +1003,7 @@ GameObject:
   - component: {fileID: 1397269130}
   - component: {fileID: 1397269132}
   - component: {fileID: 1397269131}
+  - component: {fileID: 1397269133}
   m_Layer: 5
   m_Name: Level2
   m_TagString: Untagged
@@ -1017,6 +1069,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397269129}
   m_CullTransparentMesh: 1
+--- !u!114 &1397269133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397269129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446a2464a93443c4992c7ea13b4c448a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelIcon: {fileID: 1397269129}
+  WidthIcon: 175
+  HeightIcon: 125
+  LvlMessage: 'Level 2 :'
+  ObjectLvlText: {fileID: 367390451}
+  LvlText: {fileID: 1628962447}
+  ObjectTalkingTextBox: {fileID: 973814475}
+  TalkingTextBox: {fileID: 2141174678}
+  TalkingBox: no
+  StartButton: {fileID: 1886224489}
+  Player: {fileID: 1852267410}
+  PlayerWidth: 125
+  PlayerHeight: 125
 --- !u!1 &1484135366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1263,7 @@ GameObject:
   - component: {fileID: 1723575885}
   - component: {fileID: 1723575887}
   - component: {fileID: 1723575886}
+  - component: {fileID: 1723575888}
   m_Layer: 5
   m_Name: Level1
   m_TagString: Untagged
@@ -1251,6 +1329,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723575884}
   m_CullTransparentMesh: 1
+--- !u!114 &1723575888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723575884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446a2464a93443c4992c7ea13b4c448a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelIcon: {fileID: 1723575884}
+  WidthIcon: 175
+  HeightIcon: 125
+  LvlMessage: 'Level 1 : Getting started'
+  ObjectLvlText: {fileID: 367390451}
+  LvlText: {fileID: 1628962447}
+  ObjectTalkingTextBox: {fileID: 973814475}
+  TalkingTextBox: {fileID: 2141174678}
+  TalkingBox: sup
+  StartButton: {fileID: 1886224489}
+  Player: {fileID: 1852267410}
+  PlayerWidth: 125
+  PlayerHeight: 125
 --- !u!1 &1852267410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,9 +1366,6 @@ GameObject:
   - component: {fileID: 1852267413}
   - component: {fileID: 1852267412}
   - component: {fileID: 1852267414}
-  - component: {fileID: 1852267415}
-  - component: {fileID: 1852267417}
-  - component: {fileID: 1852267416}
   m_Layer: 5
   m_Name: Player
   m_TagString: Untagged
@@ -1347,78 +1447,6 @@ MonoBehaviour:
   RightBound: 25
   UpBound: 566
   DownBound: 40
---- !u!114 &1852267415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1852267410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 446a2464a93443c4992c7ea13b4c448a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LevelIcon: {fileID: 1723575884}
-  WidthIcon: 175
-  HeightIcon: 125
-  LvlMessage: 'Level 1 : Getting started'
-  ObjectLvlText: {fileID: 367390451}
-  LvlText: {fileID: 1628962447}
-  ObjectTalkingTextBox: {fileID: 973814475}
-  TalkingTextBox: {fileID: 2141174678}
-  TalkingBox: sup
-  StartButton: {fileID: 1886224489}
-  PlayerWidth: 125
-  PlayerHeight: 125
---- !u!114 &1852267416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1852267410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 446a2464a93443c4992c7ea13b4c448a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LevelIcon: {fileID: 223537969}
-  WidthIcon: 175
-  HeightIcon: 125
-  LvlMessage: 'Level 3 :'
-  ObjectLvlText: {fileID: 367390451}
-  LvlText: {fileID: 1628962447}
-  ObjectTalkingTextBox: {fileID: 973814475}
-  TalkingTextBox: {fileID: 2141174678}
-  TalkingBox: yes
-  StartButton: {fileID: 1886224489}
-  PlayerWidth: 125
-  PlayerHeight: 125
---- !u!114 &1852267417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1852267410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 446a2464a93443c4992c7ea13b4c448a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LevelIcon: {fileID: 1397269129}
-  WidthIcon: 175
-  HeightIcon: 125
-  LvlMessage: 'Level 2 :'
-  ObjectLvlText: {fileID: 367390451}
-  LvlText: {fileID: 1628962447}
-  ObjectTalkingTextBox: {fileID: 973814475}
-  TalkingTextBox: {fileID: 2141174678}
-  TalkingBox: no
-  StartButton: {fileID: 1886224489}
-  PlayerWidth: 125
-  PlayerHeight: 125
 --- !u!1 &1886224489
 GameObject:
   m_ObjectHideFlags: 0

@@ -36,6 +36,9 @@ public class OnLevel : MonoBehaviour
     private GameObject StartButton;
 
     [SerializeField]
+    private GameObject Player;
+
+    [SerializeField]
     private float PlayerWidth;
 
     [SerializeField]
@@ -50,10 +53,10 @@ public class OnLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if((transform.position.x + (PlayerWidth / 2) > LevelIcon.transform.position.x) &&
-            (transform.position.x + (PlayerWidth / 2) < LevelIcon.transform.position.x + WidthIcon) &&
-            (transform.position.y + (PlayerHeight / 2) > LevelIcon.transform.position.y) &&
-            (transform.position.y + (PlayerHeight / 2) < LevelIcon.transform.position.y + HeightIcon))
+        if((Player.transform.position.x + (PlayerWidth / 2) > LevelIcon.transform.position.x) &&
+            (Player.transform.position.x + (PlayerWidth / 2) < LevelIcon.transform.position.x + WidthIcon) &&
+            (Player.transform.position.y + (PlayerHeight / 2) > LevelIcon.transform.position.y) &&
+            (Player.transform.position.y + (PlayerHeight / 2) < LevelIcon.transform.position.y + HeightIcon))
         {
             LvlText.text = LvlMessage;
             ObjectLvlText.SetActive(true);
