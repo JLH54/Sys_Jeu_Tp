@@ -1,6 +1,10 @@
-To do:
+To do: 
+NE PAS FAIRE LE JEU DANS LE UI
 player :
 	player animation
 	player movement
 Main menu :
 	La superposition marche(ish) a regarder si le nom du script rentre en  conflit
+
+collision -> action ->ui->SO->TYPEWRITER
+			<-

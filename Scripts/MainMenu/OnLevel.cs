@@ -14,10 +14,8 @@ public class OnLevel : MonoBehaviour
     [SerializeField]
     private float HeightIcon;
 
-    [SerializeField]
-    private string LvlMessage;
+    private string LvlTitle;
 
-    [SerializeField]
     private GameObject ObjectLvlText;
 
     [SerializeField]
@@ -29,7 +27,6 @@ public class OnLevel : MonoBehaviour
     [SerializeField]
     private Text TalkingTextBox;
 
-    [SerializeField]
     private string TalkingBox;
 
     [SerializeField]
@@ -44,10 +41,17 @@ public class OnLevel : MonoBehaviour
     [SerializeField]
     private float PlayerHeight;
 
+    [SerializeField]
+    private LvlSelector Data;
+
+    private int LvlSelected;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        LvlSelected = Data.id;
+        LvlTitle = Data.title;
+        TalkingBox = Data.description;
     }
 
     // Update is called once per frame
@@ -58,7 +62,7 @@ public class OnLevel : MonoBehaviour
             (Player.transform.position.y + (PlayerHeight / 2) > LevelIcon.transform.position.y) &&
             (Player.transform.position.y + (PlayerHeight / 2) < LevelIcon.transform.position.y + HeightIcon))
         {
-            LvlText.text = LvlMessage;
+            LvlText.text = LvlTitle;
             ObjectLvlText.SetActive(true);
 
             TalkingTextBox.text = TalkingBox;
