@@ -20,24 +20,34 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float DownBound;
 
+    private Animator AnimatorController;
+
+    private SpriteRenderer Sprite;
+
+    private void Start()
+    {
+        AnimatorController = GetComponent<Animator>();
+        Sprite = GetComponent<SpriteRenderer>();
+    }
     void Update()
     {
         //Ceci est le mouvement du joueur avec les limites
         if(Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector2.right * PlayerSpeed * Time.deltaTime);
+            AnimatorController.SetBool("Running", true);
+            Sprite.flipX = false;
         }
-        if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector2.left * PlayerSpeed * Time.deltaTime);
+            AnimatorController.SetBool("Running", true);
+            Sprite.flipX = true;
         }
-        if (Input.GetKey(KeyCode.W))
+        else
         {
-            transform.Translate(Vector2.up * PlayerSpeed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(Vector2.down * PlayerSpeed * Time.deltaTime);
+            Sprite.flipX = false;
+            AnimatorController.SetBool("Running", false);
         }
     }
 }
