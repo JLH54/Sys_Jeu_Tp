@@ -23,19 +23,19 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //Ceci est le mouvement du joueur avec les limites
-        if(Input.GetKey(KeyCode.D) && transform.position.x < LeftBound)
+        if(Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector2.right * PlayerSpeed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.A) && transform.position.x > RightBound)
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector2.left * PlayerSpeed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.W) && transform.position.y < UpBound)
+        if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector2.up * PlayerSpeed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.S) && transform.position.y > DownBound)
+        if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(Vector2.down * PlayerSpeed * Time.deltaTime);
         }
