@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float PlayerSpeed;
 
+    [SerializeField]
+    private float JumpForce;
+
     private Animator AnimatorController;
 
     private SpriteRenderer Sprite;

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405d62f6440c9eb429f6ca12e93a5e9f, type: 3}
+  m_Name: Data1
+  m_EditorClassIdentifier: 
+  id: 1
+  title: 'Level 1 : Getting Started'
+  description: So you want to join us? You first have to show what you are capable
+    of. Got it?
+  WidthIcon: 10
+  HeightIcon: 10
