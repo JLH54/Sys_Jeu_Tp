@@ -58,6 +58,7 @@ public class OnLevel : MonoBehaviour
         //    ObjectTalkingTextBox.SetActive(false);
         //    StartButton.SetActive(false);
         //}
+        SendLevelToUi();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -65,7 +66,7 @@ public class OnLevel : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             LvlText.text = Data.title;
-            ObjectLvlText.SetActive(true);
+            ObjectLvlText.SetActive(true); 
 
             TalkingTextBox.text = Data.description;
             ObjectTalkingTextBox.SetActive(true);
@@ -79,5 +80,10 @@ public class OnLevel : MonoBehaviour
         ObjectLvlText.SetActive(false);
         ObjectTalkingTextBox.SetActive(false);
         StartButton.SetActive(false);
+    }
+
+    private void SendLevelToUi()
+    {
+
     }
 }
