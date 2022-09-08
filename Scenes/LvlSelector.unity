@@ -400,7 +400,6 @@ GameObject:
   - component: {fileID: 342379391}
   - component: {fileID: 342379390}
   - component: {fileID: 342379389}
-  - component: {fileID: 342379392}
   - component: {fileID: 342379393}
   m_Layer: 0
   m_Name: Lvl2
@@ -493,25 +492,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &342379392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342379388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 446a2464a93443c4992c7ea13b4c448a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LevelIcon: {fileID: 342379388}
-  ObjectLvlText: {fileID: 367390451}
-  LvlText: {fileID: 1628962447}
-  ObjectTalkingTextBox: {fileID: 973814475}
-  TalkingTextBox: {fileID: 2141174678}
-  StartButton: {fileID: 1886224489}
-  Data: {fileID: 11400000, guid: 48659c4fc5a5de04b995c8c7e061fd20, type: 2}
 --- !u!61 &342379393
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2371,8 +2351,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1407405034}
   - component: {fileID: 1407405033}
-  - component: {fileID: 1407405035}
   - component: {fileID: 1407405036}
+  - component: {fileID: 1407405035}
   m_Layer: 0
   m_Name: Lvl1
   m_TagString: Untagged
@@ -2454,10 +2434,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1407405032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 446a2464a93443c4992c7ea13b4c448a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8934dc70ec11831498647145920fee39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelIcon: {fileID: 1407405032}
+  LevelIcon: {fileID: 367390451}
   ObjectLvlText: {fileID: 367390451}
   LvlText: {fileID: 1628962447}
   ObjectTalkingTextBox: {fileID: 973814475}
@@ -3373,7 +3353,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1968207009}
   - component: {fileID: 1968207008}
-  - component: {fileID: 1968207010}
   - component: {fileID: 1968207011}
   m_Layer: 0
   m_Name: Lvl3
@@ -3447,25 +3426,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1968207010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968207007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 446a2464a93443c4992c7ea13b4c448a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LevelIcon: {fileID: 1968207007}
-  ObjectLvlText: {fileID: 367390451}
-  LvlText: {fileID: 1628962447}
-  ObjectTalkingTextBox: {fileID: 973814475}
-  TalkingTextBox: {fileID: 2141174678}
-  StartButton: {fileID: 1886224489}
-  Data: {fileID: 11400000, guid: d0fb092b5d4f1a147a4994e3d63c5e00, type: 2}
 --- !u!61 &1968207011
 BoxCollider2D:
   m_ObjectHideFlags: 0

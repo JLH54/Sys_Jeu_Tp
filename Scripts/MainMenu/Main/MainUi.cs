@@ -19,4 +19,9 @@ public class MainUi : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ChargeGameButtonClick()
+    {
+        SceneManager.LoadScene(1);
+    }
 }

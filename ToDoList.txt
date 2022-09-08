@@ -1,10 +1,21 @@
-To do: 
-NE PAS FAIRE LE JEU DANS LE UI
-player :
-	player animation
-	player movement
-Main menu :
-	La superposition marche(ish) a regarder si le nom du script rentre en  conflit
+Menu principal : le menu comporte les choix figurant dans le document. 1 pts(done)
+Menu principal : les boutons « Nouvelle Partie » et « Quitter » fonctionnent. 2 pts (done)
+Sélection de niveau : le personnage se déplace de gauche à droite. 1 pts (done)
+Sélection de niveau : le sprite du joueur change en conséquence de la direction. 2 pts (done)
+Sélection de niveau : le personnage est animé « Idle » et « Walking ». 1 pts (done)
+Sélection de niveau : utilisation de Scriptable Objects pour contenir les informations
+de chaque niveau. 3 pts(done)
+Description de niveau : la description apparaît graduellement grâce à une coroutine. 3 pts (to do)
+Description de niveau : le joueur peut cliquer sur une touche pour passer au (to do)
+message suivant. 2 pts
+Parallaxe : présence d’un parallaxe infini fonctionnel avec au moins 3 couches. 3 pts (done(ish))
+UI : Tous les éléments du UI sont présents : « Nom, Desc, Étoile, Bouton ». 2 pts (done)
+UI : Vous devez faire des animations dans le UI pour faire apparaître et disparaître (done)
+les informations du niveau quand le joueur entre et sort de la collision. 1 pts (done)
+Qualité de vie : Ajout d’une musique et d’effets sonores. 1 pts (to do)
+Git : Clarté et fréquence des commits. 2 pts (in progress)
+Qualité du code : Le code est propre et respecte les normes de programmation. 5 pts (to do)
+Document de design : Exactitude du document et professionnalisme. 3 pts (to do)
 
 collision -> action ->ui->SO->TYPEWRITER
 			<-

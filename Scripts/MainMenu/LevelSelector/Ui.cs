@@ -21,7 +21,7 @@ public class Ui : MonoBehaviour
 
     public void OnStartClick()
     {
-        SceneManager.LoadScene(id);
+        //SceneManager.LoadScene(id);
     }
 
 
