@@ -8,14 +8,6 @@ public class OnLevel : MonoBehaviour
     [SerializeField]
     private GameObject LevelIcon;
 
-    [SerializeField]
-    private float WidthIcon;
-
-    [SerializeField]
-    private float HeightIcon;
-
-    private string LvlTitle;
-
     private GameObject ObjectLvlText;
 
     [SerializeField]
@@ -26,8 +18,6 @@ public class OnLevel : MonoBehaviour
 
     [SerializeField]
     private Text TalkingTextBox;
-
-    private string TalkingBox;
 
     [SerializeField]
     private GameObject StartButton;
@@ -50,22 +40,20 @@ public class OnLevel : MonoBehaviour
     void Start()
     {
         LvlSelected = Data.id;
-        LvlTitle = Data.title;
-        TalkingBox = Data.description;
     }
 
     // Update is called once per frame
     void Update()
     {
         if((Player.transform.position.x + (PlayerWidth / 2) > LevelIcon.transform.position.x) &&
-            (Player.transform.position.x + (PlayerWidth / 2) < LevelIcon.transform.position.x + WidthIcon) &&
+            (Player.transform.position.x + (PlayerWidth / 2) < LevelIcon.transform.position.x + Data.WidthIcon) &&
             (Player.transform.position.y + (PlayerHeight / 2) > LevelIcon.transform.position.y) &&
-            (Player.transform.position.y + (PlayerHeight / 2) < LevelIcon.transform.position.y + HeightIcon))
+            (Player.transform.position.y + (PlayerHeight / 2) < LevelIcon.transform.position.y + Data.HeightIcon))
         {
-            LvlText.text = LvlTitle;
+            LvlText.text = Data.title;
             ObjectLvlText.SetActive(true);
 
-            TalkingTextBox.text = TalkingBox;
+            TalkingTextBox.text = Data.description;
             ObjectTalkingTextBox.SetActive(true);
 
             StartButton.SetActive(true);

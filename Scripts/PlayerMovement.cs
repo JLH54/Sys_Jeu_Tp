@@ -8,18 +8,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float PlayerSpeed;
 
-    [SerializeField]
-    private float LeftBound;
-
-    [SerializeField]
-    private float RightBound;
-
-    [SerializeField]
-    private float UpBound;
-
-    [SerializeField]
-    private float DownBound;
-
     private Animator AnimatorController;
 
     private SpriteRenderer Sprite;

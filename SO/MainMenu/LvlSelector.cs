@@ -5,7 +5,15 @@ using UnityEngine.UI;
 
 public class LvlSelector : ScriptableObject
 {
-    public int id;
-    public string title;
-    public string description;
+    //[System.Serializable]
+    //public struct selector
+    //{
+        public int id;
+        public string title;
+        public string description;
+
+        public float WidthIcon;
+        public float HeightIcon;
+    //}
+
 }
