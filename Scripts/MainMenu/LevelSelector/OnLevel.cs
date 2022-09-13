@@ -31,45 +31,35 @@ public class OnLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if((Player.transform.position.x + (PlayerWidth / 2) > LevelIcon.transform.position.x) &&
-        //    (Player.transform.position.x + (PlayerWidth / 2) < LevelIcon.transform.position.x + Data.WidthIcon) &&
-        //    (Player.transform.position.y + (PlayerHeight / 2) > LevelIcon.transform.position.y) &&
-        //    (Player.transform.position.y + (PlayerHeight / 2) < LevelIcon.transform.position.y + Data.HeightIcon))
-        //{
-        //    LvlText.text = Data.title;
-        //    ObjectLvlText.SetActive(true);
-
-        //    TalkingTextBox.text = Data.description;
-        //    ObjectTalkingTextBox.SetActive(true);
-
-        //    StartButton.SetActive(true);
-
-        //    Debug.Log("Activated level");
-        //}
-        //else
-        //{
-        //    ObjectLvlText.SetActive(false);
-        //    ObjectTalkingTextBox.SetActive(false);
-        //    StartButton.SetActive(false);
-        //}
         SendLevelToUi();
+    }
+
+    private IEnumerator TypeWriter(string text, Text textBox)
+    {
+        foreach (char c in text)
+        {
+            textBox.text += c;
+            yield return new WaitForSeconds(0.125f);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
         {
-            LvlText.text = Data.title;
-            ObjectLvlText.SetActive(true); 
+            
 
-            TalkingTextBox.text = Data.description;
+            ObjectLvlText.SetActive(true);
+            StartCoroutine(TypeWriter(Data.title, LvlText));
+
             ObjectTalkingTextBox.SetActive(true);
+            StartCoroutine(TypeWriter(Data.description, TalkingTextBox));
 
             StartButton.SetActive(true);
 
@@ -82,10 +72,15 @@ public class OnLevel : MonoBehaviour
         ObjectLvlText.SetActive(false);
         ObjectTalkingTextBox.SetActive(false);
         StartButton.SetActive(false);
+        StopAllCoroutines();
+        LvlText.text = "";
+        TalkingTextBox.text = "";
     }
 
     private void SendLevelToUi()
     {
 
     }
+
+    
 }
