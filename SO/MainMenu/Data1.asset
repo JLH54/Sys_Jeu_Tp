@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 6
   title: 'Level 1 : Getting Started'
-  description: So you want to join us? You first have to show what you are capable
-    of. Got it?
+  description1: So you want to join us?
+  description2: You first have to show what you are capable of
+  description3: run this little parkour so that we can see yes?
   WidthIcon: 10
   HeightIcon: 10

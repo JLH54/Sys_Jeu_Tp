@@ -11,7 +11,9 @@ public class LvlSelector : ScriptableObject
     
     public int id;
     public string title;
-    public string description;
+    public string description1;
+    public string description2;
+    public string description3;
 
     public float WidthIcon;
     public float HeightIcon;

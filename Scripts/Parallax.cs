@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-    //from brackeys :)
-
     //les choses a faire le parallax dessus
     //public Transform[] Backgrounds;
 
