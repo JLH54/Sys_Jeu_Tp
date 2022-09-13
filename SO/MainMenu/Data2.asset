@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   title: 'Level 2 : Prove yourself'
-  description: 
+  description1: 'Impressive parkour, but you could be better. '
+  description2: 'Welcome to the team, we need fresh blood to help us run some errand '
+  description3: 'For your first mission, we need you to get an object for us. '
   WidthIcon: 10
   HeightIcon: 10

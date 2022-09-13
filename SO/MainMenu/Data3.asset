@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 3
   title: 'Level 3 :'
-  description: 
+  description1: 'N O I C E, i needed that so bad '
+  description2: 'You are proving yourself kid '
+  description3: 'But I need somethin else, can you get that for me?  '
   WidthIcon: 10
   HeightIcon: 10
