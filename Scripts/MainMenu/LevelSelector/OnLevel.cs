@@ -31,7 +31,7 @@ public class OnLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LvlSelected = Data.id;
+       
     }
 
     // Update is called once per frame
@@ -72,6 +72,8 @@ public class OnLevel : MonoBehaviour
             ObjectTalkingTextBox.SetActive(true);
 
             StartButton.SetActive(true);
+
+            LvlSelected = Data.id;
         }
     }
 
