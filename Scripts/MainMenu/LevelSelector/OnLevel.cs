@@ -80,7 +80,6 @@ public class OnLevel : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
 
-            
             ObjectLvlText.SetActive(true);
             StartCoroutine(TypeWriter(Data.title, LvlText));
 
