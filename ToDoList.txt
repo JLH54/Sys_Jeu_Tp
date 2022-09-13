@@ -13,7 +13,7 @@ UI : Tous les éléments du UI sont présents : « Nom, Desc, Étoile, Bouton »
 UI : Vous devez faire des animations dans le UI pour faire apparaître et disparaître les informations du niveau quand le joueur entre et sort de la collision. 1 pts (done)
 Qualité de vie : Ajout d’une musique et d’effets sonores. 1 pts (to do)
 Git : Clarté et fréquence des commits. 2 pts (in progress)
-Qualité du code : Le code est propre et respecte les normes de programmation. 5 pts (to do)
+Qualité du code : Le code est propre et respecte les normes de programmation. 5 pts (done)
 Document de design : Exactitude du document et professionnalisme. 3 pts (to do)
 
 collision -> action ->ui->SO->TYPEWRITER
