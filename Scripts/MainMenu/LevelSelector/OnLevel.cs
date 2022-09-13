@@ -26,6 +26,7 @@ public class OnLevel : MonoBehaviour
     [SerializeField]
     private LvlSelector Data;
 
+    //cette variable va etre pour plus tard(tp2)
     private int LvlSelected;
 
     private int idx;
@@ -42,7 +43,9 @@ public class OnLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SendLevelToUi();
+        //SendLevelToUi();
+
+        //Pour pouvoir aller a l'autre bloc de texte
         if(IsOnLvlSelector)
         {
             if (Input.GetKeyDown(KeyCode.Space) && idx == 1)
@@ -66,6 +69,7 @@ public class OnLevel : MonoBehaviour
         }
     }
 
+    //fait l'effet de typewriter
     private IEnumerator TypeWriter(string text, Text textBox)
     {
         foreach (char c in text)
@@ -75,11 +79,11 @@ public class OnLevel : MonoBehaviour
         }
     }
 
+    //Regarde quand le joueur touche le niveau
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
         {
-
             ObjectLvlText.SetActive(true);
             StartCoroutine(TypeWriter(Data.title, LvlText));
 
@@ -94,6 +98,7 @@ public class OnLevel : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        //remet tout comme avant pour que les autres niveaux puisse mettre leur information
         ObjectLvlText.SetActive(false);
         ObjectTalkingTextBox.SetActive(false);
         StartButton.SetActive(false);
@@ -103,8 +108,9 @@ public class OnLevel : MonoBehaviour
         TalkingTextBox.text = "";
     }
 
-    private void SendLevelToUi()
-    {
+    //sa va etre pour plus tard
+    //private void SendLevelToUi()
+    //{
 
-    }
+    //}
 }

@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
-        //Ceci est le mouvement du joueur avec les limites
+        //Ceci est le mouvement du joueur
         if(Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector2.right * PlayerSpeed * Time.deltaTime);
@@ -40,5 +40,7 @@ public class PlayerMovement : MonoBehaviour
             Sprite.flipX = false;
             AnimatorController.SetBool("Running", false);
         }
+
+        //a venir: le saut...
     }
 }

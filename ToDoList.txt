@@ -10,7 +10,7 @@ Description de niveau : le joueur peut cliquer sur une touche pour passer au (do
 message suivant. 2 pts
 Parallaxe : présence d’un parallaxe infini fonctionnel avec au moins 3 couches. 3 pts (done)
 UI : Tous les éléments du UI sont présents : « Nom, Desc, Étoile, Bouton ». 2 pts (done)
-UI : Vous devez faire des animations dans le UI pour faire apparaître et disparaître les informations du niveau quand le joueur entre et sort de la collision. 1 pts (to do)
+UI : Vous devez faire des animations dans le UI pour faire apparaître et disparaître les informations du niveau quand le joueur entre et sort de la collision. 1 pts (done)
 Qualité de vie : Ajout d’une musique et d’effets sonores. 1 pts (to do)
 Git : Clarté et fréquence des commits. 2 pts (in progress)
 Qualité du code : Le code est propre et respecte les normes de programmation. 5 pts (to do)
