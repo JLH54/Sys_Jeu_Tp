@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 405d62f6440c9eb429f6ca12e93a5e9f, type: 3}
   m_Name: Data2
   m_EditorClassIdentifier: 
-  id: 2
+  SceneName: Level2
   title: 'Level 2 : Prove yourself'
   description1: 'Impressive parkour, but you could be better. '
   description2: 'Welcome to the team, we need fresh blood to help us run some errand '

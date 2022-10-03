@@ -26,9 +26,6 @@ public class OnLevel : MonoBehaviour
     [SerializeField]
     private LvlSelector Data;
 
-    //cette variable va etre pour plus tard(tp2)
-    private int LvlSelected;
-
     private int idx;
 
     private bool IsOnLvlSelector;
@@ -91,8 +88,6 @@ public class OnLevel : MonoBehaviour
             StartCoroutine(TypeWriter(Data.description1, TalkingTextBox));
 
             IsOnLvlSelector = true;
-
-            LvlSelected = Data.id;
         }
     }
 
@@ -109,8 +104,8 @@ public class OnLevel : MonoBehaviour
     }
 
     //sa va etre pour plus tard
-    //private void SendLevelToUi()
-    //{
-
-    //}
+    public string SendLevelToUi()
+    {
+        return Data.SceneName;
+    }
 }

@@ -21,7 +21,9 @@ public class Ui : MonoBehaviour
 
     public void OnStartClick()
     {
-        //SceneManager.LoadScene(id);
+        OnLevel theLevel = FindObjectOfType<OnLevel>();
+        string sceneName = theLevel.SendLevelToUi();
+        SceneManager.LoadScene(sceneName);
     }
 
 

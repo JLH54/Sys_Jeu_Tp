@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 405d62f6440c9eb429f6ca12e93a5e9f, type: 3}
   m_Name: Data3
   m_EditorClassIdentifier: 
-  id: 3
+  SceneName: Level3
   title: 'Level 3 :'
   description1: 'N O I C E, i needed that so bad '
   description2: 'You are proving yourself kid '
