@@ -18,3 +18,23 @@ Document de design : Exactitude du document et professionnalisme. 3 pts (to do)
 
 collision -> action ->ui->SO->TYPEWRITER
 			<-
+
+TP2
+Mécanique : le personnage se déplace. 1 pts (done)
+Mécanique : le personnage peut sauter. 1 pts (done)
+Mécanique : le personnage peut perdre la partie. 1 pts (to do)
+Mécanique : le personnage est complètement animé. 1 pts (to do)
+Scène : Tous les niveaux sont différents. 1 pts (done)
+Boucle de jeu : Difficulté incrémentale des niveaux. 2 pts
+UI : Affiche le bon nombre d’objets ramassés. 1 pts (done)
+UI : Affiche le nombre d’objets nécessaires pour la mention « Génial ». 1 pts (done)
+UI : Affiche le score avec un bouton permettant de retourner au « Level Select » 2 pts
+Audio : Un bassin est implémenté pour gérer les sons du jeu. 3 pts
+Audio : Les différentes actions du jeu sont supportées par des SFX. 1 pts
+Sauvegarde : Les bons éléments se trouvent dans la sauvegarde. 1 pts
+Sauvegarde : La sauvegarde est lancée à la fin de chaque niveau. 2 pts
+Sauvegarde : Il est possible de charger la partie à partir du menu principal. 2 pts
+Sauvegarde : La couleur de l’étoile correspond au bon score pour le niveau actuel. 2 pts
+Git : Clarté et fréquence des commits. 2 pts
+Qualité du code : Le code est propre et respecte les normes de programmation. 5 pts
+Document de design : Exactitude du document et professionnalisme. 3 pts
